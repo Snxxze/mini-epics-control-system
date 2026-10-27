@@ -1,7 +1,7 @@
 record(ai, "ESP32:TEMP") {
 	field(DESC, "Simulated temperature")
 	field(DTYP, "Soft Channel")
-	field(INP, "28.5")
+	field(INP, "SIM:TEMP:SRC CP")
 	field(EGU, "degC")
 	field(PREC, "1")
 	field(SCAN, "Passive")
@@ -10,7 +10,7 @@ record(ai, "ESP32:TEMP") {
 record(ai, "ESP32:HUMIDITY") {
 	field(DESC, "Simulated relative humidity")
 	field(DTYP, "Soft Channel")
-	field(INP, "65.0")
+	field(INP, "SIM:HUMIDITY:SRC CP")
 	field(EGU, "%")
 	field(PREC, "1")
 	field(SCAN, "Passive")
@@ -32,3 +32,18 @@ record(bi, "ESP32:LED:RBV") {
 	field(ONAM, "ON")
 	field(SCAN, "Passive")
 }
+
+record(calc, "SIM:TEMP:SRC") {
+	field(DESC, "Temperature simulator")
+	field(SCAN, "1 second")
+	field(CALC, "25 + 5 * RNDM")
+	field(PREC, "1")
+}
+
+record(calc, "SIM:HUMIDITY:SRC") {
+	field(DESC, "Humidity simulator")
+	field(SCAN, "1 second")
+	field(CALC, "55 + 20 * RNDM")
+	field(PREC, "1")
+}
+
