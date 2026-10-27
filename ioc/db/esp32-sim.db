@@ -1,0 +1,34 @@
+record(ai, "ESP32:TEMP") {
+	field(DESC, "Simulated temperature")
+	field(DTYP, "Soft Channel")
+	field(INP, "28.5")
+	field(EGU, "degC")
+	field(PREC, "1")
+	field(SCAN, "Passive")
+}
+
+record(ai, "ESP32:HUMIDITY") {
+	field(DESC, "Simulated relative humidity")
+	field(DTYP, "Soft Channel")
+	field(INP, "65.0")
+	field(EGU, "%")
+	field(PREC, "1")
+	field(SCAN, "Passive")
+}
+
+record(bo, "ESP32:LED") {
+	field(DESC, "Requested LED state")
+	field(DTYP, "Soft Channel")
+	field(ZNAM, "OFF")
+	field(ONAM, "ON")
+	field(VAL, "0")
+}
+
+record(bi, "ESP32:LED:RBV") {
+	field(DESC, "Reported LED state")
+	field(DTYP, "Soft Channel")
+	field(INP, "ESP32:LED CP")
+	field(ZNAM, "OFF")
+	field(ONAM, "ON")
+	field(SCAN, "Passive")
+}
