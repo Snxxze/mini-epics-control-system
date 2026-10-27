@@ -5,6 +5,16 @@ record(ai, "ESP32:TEMP") {
 	field(EGU, "degC")
 	field(PREC, "1")
 	field(SCAN, "Passive")
+	
+	field(HIGH, "28.5")
+	field(HSV, "MINOR")
+	field(HIHI, "29.5")
+	field(HHSV, "MAJOR")
+	field(LOW, "25.5")
+	field(LSV, "MINOR")
+	field(LOLO, "25.0")
+	field(LLSV, "MAJOR")
+	field(HYST, "0.2")
 }
 
 record(ai, "ESP32:HUMIDITY") {
