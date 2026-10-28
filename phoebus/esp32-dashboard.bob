@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-10-28 13:58:12 by Acer-->
+<display version="2.0.0">
+  <name>Display</name>
+  <width>900</width>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>ESP32 Environment Monitor</text>
+    <x>20</x>
+    <y>20</y>
+    <width>860</width>
+    <height>50</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="24.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="arc" version="2.0.0">
+    <name>Arc</name>
+    <x>383</x>
+    <y>231</y>
+    <width>0</width>
+    <height>0</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Temperature</text>
+    <x>80</x>
+    <y>120</y>
+    <width>250</width>
+    <height>40</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>ca://ESP32:TEMP</pv_name>
+    <x>80</x>
+    <y>170</y>
+    <width>250</width>
+    <height>70</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="24.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Humidity</text>
+    <x>570</x>
+    <y>120</y>
+    <width>250</width>
+    <height>40</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>ca://ESP32:HUMIDITY</pv_name>
+    <x>570</x>
+    <y>170</y>
+    <width>250</width>
+    <height>70</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="24.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="meter" version="3.0.0">
+    <name>Meter</name>
+    <pv_name>ca://ESP32:TEMP</pv_name>
+    <x>80</x>
+    <y>270</y>
+    <width>250</width>
+    <height>220</height>
+  </widget>
+  <widget type="meter" version="3.0.0">
+    <name>Meter_1</name>
+    <pv_name>ca://ESP32:HUMIDITY</pv_name>
+    <x>570</x>
+    <y>270</y>
+    <width>250</width>
+    <height>220</height>
+  </widget>
+</display>

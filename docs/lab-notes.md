@@ -25,3 +25,4 @@ cat /etc/os-release
 uname -m
 hostname
 ip address
+```
